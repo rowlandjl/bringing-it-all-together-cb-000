@@ -50,7 +50,7 @@ class Dog
   end 
   
   def self.new_from_db(row) 
-    new_dog = self.new
+    new_dog = self.new(row)
     new_dog.id = row[:id]
     new_dog.name = row[:name]
     new_dog.breed = row[:breed]
