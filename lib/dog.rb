@@ -50,7 +50,7 @@ class Dog
   end 
   
   def self.new_from_db(row) 
-    new_dog = self.new
+    new_dog = self.new(row)
   end 
   
   def self.find_by_id(id)
