@@ -61,7 +61,7 @@ class Dog
       WHERE id = ?
     SQL
     
-    DB[:conn].execute(sql, self.id)
+    DB[:conn].execute(sql, id)
   end 
   
   def self.find_or_create_by 
