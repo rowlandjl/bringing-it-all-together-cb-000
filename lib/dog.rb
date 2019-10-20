@@ -60,6 +60,8 @@ class Dog
       FROM dogs 
       WHERE id = ?
     SQL
+    
+    DB[:conn].execute(sql)
   end 
   
   def self.find_or_create_by 
