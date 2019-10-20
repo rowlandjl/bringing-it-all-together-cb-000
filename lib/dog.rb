@@ -58,7 +58,7 @@ class Dog
   def self.find_or_create_by 
   end 
   
-  def self.find_by_name 
+  def self.find_by_name(name)
   end 
   
   def update 
