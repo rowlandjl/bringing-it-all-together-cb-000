@@ -52,6 +52,7 @@ class Dog
   def self.new_from_db(row) 
     new_dog = self.new
     new_dog.id = row[0]
+    new_dog
   end 
   
   def self.find_by_id(id)
